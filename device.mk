@@ -28,6 +28,12 @@ PRODUCT_PACKAGES += \
 TARGET_SCREEN_HEIGHT := 1440
 TARGET_SCREEN_WIDTH := 720
 
+# Filesystem
+PRODUCT_PACKAGES += \
+    e2fsck_ramdisk \
+    tune2fs_ramdisk \
+    resize2fs_ramdisk
+
 # Screen density
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
