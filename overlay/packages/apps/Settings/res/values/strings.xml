@@ -12,8 +12,7 @@
 -->
 
 <resources>
-   <string name="maintainer_git_username">703joko</string>
-    <string name="maintainer_tele_username">jrinfected</string>
-    <string name="maintainer_ig_username">jokkoon</string>
-    <string name="maintainer_fb_username">keynyut</string>
+   <string name="maintainer_git_username">KanadeAlt</string>
+    <string name="maintainer_tele_username">RenzAlt</string>
+    <string name="maintainer_fb_username">Ren</string>
 </resources>
