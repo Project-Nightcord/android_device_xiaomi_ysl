@@ -1,0 +1,5 @@
+persist.sys.fp.            u:object_r:vendor_fp_prop:s0
+sys.fp.goodix              u:object_r:vendor_fp_prop:s0
+sys.fp.vendor              u:object_r:vendor_fp_prop:s0
+persist.vendor.fingerprint.   u:object_r:vendor_fp_prop:s0
+persist.qfp                   u:object_r:vendor_fp_prop:s0

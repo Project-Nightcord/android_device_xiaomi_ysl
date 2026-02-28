@@ -7,6 +7,12 @@
 # Platform
 TARGET_BOARD_PLATFORM := msm8953
 
+# Gatekeeper
+TARGET_USES_DEVICE_SPECIFIC_GATEKEEPER := true
+
+# Keymaster
+TARGET_USES_DEVICE_SPECIFIC_KEYMASTER := true
+
 # Inherit from mithorium-common
 $(call inherit-product, device/xiaomi/mithorium-common/mithorium.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
@@ -34,8 +40,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     camera.msm8953
 
+# Fingerprint
 PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint-service.xiaomi \
     liblzma.vendor:64
+
+# Fingerprint
+$(call soong_config_set,XIAOMI_BIOMETRICS_FINGERPRINT,RUN_32BIT,true)
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
 # Input
 PRODUCT_COPY_FILES += \
@@ -51,7 +65,8 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/xiaomi
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/ysl/ysl-vendor.mk)

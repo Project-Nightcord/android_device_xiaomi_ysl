@@ -1,2 +1,5 @@
 # IR
 /dev/spidev5\.1					u:object_r:lirc_device:s0
+
+# Partitions
+/dev/block/by-name/logdump		u:object_r:metadata_block_device:s0

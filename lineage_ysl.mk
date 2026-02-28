@@ -16,7 +16,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, device/xiaomi/ysl/device.mk)
 
 # Kernel
-TARGET_KERNEL_VERSION := 4.9
+TARGET_KERNEL_VERSION := 4.19
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ysl

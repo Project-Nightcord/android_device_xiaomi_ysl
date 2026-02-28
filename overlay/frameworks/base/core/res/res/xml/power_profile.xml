@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <device name="Android">
-    <item name="screen.on.display0">63</item>
-    <item name="screen.full.display0">261</item>
-    <item name="cpu.clusters.cores">8</item>
-    <array name="cpu.core_speeds.cluster0">
+    <item name="screen.on.display0">75</item>
+    <item name="screen.full.display0">255</item>
+    <array name="cpu.clusters.cores">
+        <value>8</value>
+    </array>
+    <array name="cpu.speeds.cluster0">
         <value>652800</value>
         <value>1036800</value>
         <value>1401600</value>

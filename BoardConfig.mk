@@ -17,6 +17,7 @@ DEVICE_PATH := device/xiaomi/ysl
 TARGET_SCREEN_DENSITY := 260
 
 # HIDL
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/manifest/gatekeeper.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
@@ -24,6 +25,7 @@ TARGET_KERNEL_CONFIG := ysl-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953
 
 # Partitions
+BOARD_USES_METADATA_PARTITION := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
 BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
@@ -42,6 +44,7 @@ VENDOR_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
 
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/biometrics/sepolicy
 
 # Inherit from the proprietary version
 include vendor/xiaomi/ysl/BoardConfigVendor.mk

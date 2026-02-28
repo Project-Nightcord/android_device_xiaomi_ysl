@@ -18,5 +18,12 @@ vendor/etc/acdbdata/adsp_avs_config.acdb
 # Consumer IR
 -vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.msm8953.so;DISABLE_DEPS
 
+# Fingerprint
+-vendor/lib/hw/fingerprint.default.so:vendor/lib/hw/fingerprint.goodix.default.so;DISABLE_DEPS
+-vendor/lib/hw/fingerprint.fpc.default.so;DISABLE_DEPS
+-vendor/lib/libgf_ca.so;DISABLE_DEPS
+-vendor/lib/libgf_hal.so;DISABLE_DEPS
+-vendor/lib/libvendor.goodix.hardware.fingerprint@1.0-service.so;DISABLE_DEPS
+
 # Sensors configs
 vendor/etc/sensors/sensor_def_qcomdev.conf

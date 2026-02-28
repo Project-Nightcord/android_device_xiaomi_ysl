@@ -8,6 +8,7 @@
 -vendor/lib/libjpegdhw.so;DISABLE_DEPS
 -vendor/lib/libjpegdmahw.so;DISABLE_DEPS
 -vendor/lib/libjpegehw.so;DISABLE_DEPS
+-vendor/lib/libmpbase.so;DISABLE_DEPS
 -vendor/lib/libmmcamera2_c2d_module.so;DISABLE_DEPS
 -vendor/lib/libmmcamera2_cpp_module.so;DISABLE_DEPS
 -vendor/lib/libmmcamera2_dcrf.so;DISABLE_DEPS
