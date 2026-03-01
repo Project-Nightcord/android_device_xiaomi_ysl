@@ -2,4 +2,6 @@
 on boot
     chown system system /dev/spidev5.1
 
-
+# DT2W
+on boot
+    write /proc/sys/dev/xiaomi_msm8953_touchscreen/enable_dt2w 1 
