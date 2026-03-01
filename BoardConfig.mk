@@ -21,6 +21,7 @@ DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/manifest/gatekeeper.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 TARGET_KERNEL_CONFIG := ysl-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953
 
