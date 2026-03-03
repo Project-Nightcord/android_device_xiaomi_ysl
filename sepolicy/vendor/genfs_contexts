@@ -32,6 +32,7 @@ genfscon sysfs /devices/platform/soc/a000000.qcom,wcnss-wlan/wakeup/wakeup u:obj
 genfscon sysfs /devices/platform/soc/7000000.ssusb/wakeup/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/78b7000.i2c/i2c-3/3-0038/wakeup/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/78b6000.i2c/i2c-2/2-001d/power_supply/parallel/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1020/wakeup/wakeup				u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/7900000.qcom,ipa/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:gpio_keys/wakeup/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:smp2p-adsp/wakeup/wakeup u:object_r:sysfs_wakeup:s0
