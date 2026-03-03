@@ -9,18 +9,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common AfterLife stuff
+$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 
 # Inherit from ysl device
 $(call inherit-product, device/xiaomi/ysl/device.mk)
+
+# AfterLife flags
+AFTERLIFE_MAINTAINER := RenzAlt
 
 # Kernel
 TARGET_KERNEL_VERSION := 4.19
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ysl
-PRODUCT_NAME := lineage_ysl
+PRODUCT_NAME := afterlife_ysl
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi S2
 PRODUCT_MANUFACTURER := Xiaomi
