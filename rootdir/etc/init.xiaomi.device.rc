@@ -1,6 +1,6 @@
-# IR
+# ADSP
 on boot
-    chown system system /dev/spidev5.1
+    stop vendor.adsprpcd
 
 # DT2W
 on boot
@@ -27,3 +27,7 @@ on boot
 on post-fs-data
     mkdir /data/vendor/goodix 0770 system system
     mkdir /data/vendor/fpc 0770 system system
+
+# IR
+on boot
+    chown system system /dev/spidev5.1
