@@ -18,6 +18,10 @@ $(call inherit-product, device/xiaomi/ysl/device.mk)
 # Kernel
 TARGET_KERNEL_VERSION := 4.19
 
+# Avium
+AVIUM_BUILDTYPE := Unoffical
+AVIUM_MAINTAINER := Mika
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ysl
 PRODUCT_NAME := lineage_ysl
