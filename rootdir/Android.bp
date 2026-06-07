@@ -5,12 +5,6 @@
 //
 
 prebuilt_etc {
-    name: "fstab.qcom",
-    src: "etc/fstab.qcom",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "init.xiaomi.device.rc",
     src: "etc/init.xiaomi.device.rc",
     sub_dir: "init",
