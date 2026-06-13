@@ -10,3 +10,9 @@ prebuilt_etc {
     sub_dir: "init",
     vendor: true,
 }
+
+prebuilt_etc {
+    name: "fstab.qcom",
+    src: "etc/fstab.qcom",
+    vendor: true,
+}
