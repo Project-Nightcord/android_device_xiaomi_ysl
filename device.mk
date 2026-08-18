@@ -17,6 +17,9 @@ TARGET_USES_DEVICE_SPECIFIC_KEYMASTER := true
 $(call inherit-product, device/xiaomi/mithorium-common/mithorium.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
+# Dynamic Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
@@ -89,8 +92,7 @@ PRODUCT_COPY_FILES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    fstab.qcom_ramdisk \
-    fstab.qcom \
+    fstab.qcom.ramdisk \
     init.xiaomi.device.rc
 
 # Soong namespaces
