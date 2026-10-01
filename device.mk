@@ -100,5 +100,8 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi
 
+# Inherit from asterarium
+$(call inherit-product, asterarium/vendor/extra/asterarium.mk)
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/ysl/ysl-vendor.mk)
